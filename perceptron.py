@@ -1,8 +1,7 @@
 import csv
 import random
 
-def split_data(csv_path: str, train_size: float):
-    assert 0.0 < train_size < 1.0, "Incorrect Input"
+def split_data(csv_path: str, train_size: float): 
     data = []
     with open(csv_path, "r") as f:
         for row in csv.DictReader(f):
